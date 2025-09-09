@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crosscurrent Coaching</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #0a2540;
+      background: #fff;
+    }
+
+    header {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #e6f0f8;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0a2540;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #2d5a88;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #0a2540;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem auto;
+      max-width: 700px;
+      color: #24496d;
+    }
+
+    .offerings {
+      display: grid;
+      gap: 2rem;
+    }
+
+    @media (min-width: 700px) {
+      .offerings {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      background: #f5faff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+      color: #0a2540;
+    }
+
+    .card p {
+      color: #3c648a;
+      font-size: 0.95rem;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    .contact form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #cbd6e2;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      background: #0a66c2;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .contact button:hover {
+      background: #084d92;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #6c8aad;
+      background: #f5faff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Placeholder logo: you can replace with an SVG or image -->
+    <h1>🌊 Crosscurrent Coaching</h1>
+    <p>Coaching for creatives, change-makers, and leaders moving against the tide</p>
+  </header>
+
+  <section class="hero">
+    <p>
+      At Crosscurrent Coaching, I help creatives, leaders, and impact-driven individuals navigate moments of change. 
+      Whether you feel out of place in the mainstream current or are charting bold new waters, coaching offers a space 
+      to clarify your vision, build resilience, and lead with authenticity.
+    </p>
+  </section>
+
+  <section>
+    <h2>Offerings</h2>
+    <div class="offerings">
+      <div class="card">
+        <h3>1:1 Coaching</h3>
+        <p>Tailored sessions for individuals seeking clarity, accountability, and growth.</p>
+      </div>
+      <div class="card">
+        <h3>Workshops & Retreats</h3>
+        <p>Team facilitation and immersive experiences that spark creativity and connect purpose to action.</p>
+      </div>
+      <div class="card">
+        <h3>Pro Bono Coaching</h3>
+        <p>A commitment to supporting climate and social-impact organizations with accessible coaching.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <img src="https://via.placeholder.com/120" alt="Allison Cooper Headshot"/>
+    <p>
+      I’m Allison Cooper—a product designer, teacher, sailor, and coach. With over a decade of experience leading design 
+      at companies like Course Hero and CliffsNotes, and teaching leadership at California College of the Arts, I’ve dedicated 
+      my career to helping people unlock creativity and impact. Coaching is where I bring it all together: guiding individuals 
+      and teams to align with what matters most.
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="_replyto" placeholder="Your Email" required/>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Crosscurrent Coaching · Designed with care in the Bay & Baja</p>
+  </footer>
+</body>
+</html>
