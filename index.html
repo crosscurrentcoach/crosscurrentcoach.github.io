@@ -15,11 +15,17 @@
       background: #fff;
     }
 
-    header {
-      padding: 2rem 1.5rem;
-      text-align: center;
-      border-bottom: 2px solid #e6f0f8;
-    }
+header {
+  padding: 3rem 1.5rem;   /* increased breathing room */
+  text-align: center;
+  border-bottom: 2px solid #e6f0f8;
+}
+
+header .logo {
+  max-width: 320px;       /* scales logo appropriately */
+  height: auto;
+  margin-bottom: 1rem;
+}
 
     header h1 {
       font-size: 2rem;
@@ -143,11 +149,10 @@
   </style>
 </head>
 <body>
-  <header>
-    <!-- Placeholder logo: you can replace with an SVG or image -->
-    <h1>🌊 Crosscurrent Coaching</h1>
-    <p>Coaching for creatives, change-makers, and leaders moving against the tide</p>
-  </header>
+<header>
+  <img src="logo.svg" alt="Crosscurrent Coaching Logo" class="logo"/>
+  <p>Coaching for creatives, change-makers, and leaders moving against the tide</p>
+</header>
 
   <section class="hero">
     <p>
